@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import { BsBookmarks } from "react-icons/bs";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmark, handleMarksAsRead}) => {
     // console.log(blog);
     const {title, cover, author, author_img, posted_date, reading_time, hashtags} = blog;
     return (
-        <div>
-            <img className=' rounded-2xl' src= {cover} alt={`Cover picture of the title ${title}`} />
-            <div className='flex justify-between my-4'>
+        <div className=' mb-20 space-y-4'>
+            <img className=' rounded-2xl mb-8' src= {cover} alt={`Cover picture of the title ${title}`} />
+            <div className='flex justify-between mb-6 '>
                 <div className='flex gap-6 items-center '>
                     <img className=' w-16 h-16 rounded-full' src= {author_img} alt="" />
                     <div>
@@ -16,20 +17,26 @@ const Blog = ({blog}) => {
                 </div>
                 <div>
                     <span>{reading_time} min read </span>
+                    <button onClick={() => handleAddToBookmark(blog)} className='ml-2 text-red-600' ><BsBookmarks></BsBookmarks> </button>
                 </div>
             </div>
-            <h2 className='text-4xl'> {title} </h2>
+            <h2 className='text-4xl mb-8'> {title} </h2>
             <p>
                 {
                     hashtags.map((hash, idx) => <span key={idx} ><a href=''>{hash} </a></span> )
                 }
             </p>
+            <button 
+             onClick={()=> handleMarksAsRead(reading_time)}
+             className=' text-purple-600 font-bold underline'>Mark As Read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func,
+    handleMarksAsRead: PropTypes.func
 }
 
 export default Blog;
