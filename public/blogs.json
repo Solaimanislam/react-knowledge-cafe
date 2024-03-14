@@ -1,0 +1,52 @@
+[
+  {
+    "id": "123456",
+    "cover": "https://i.ibb.co/s5mJ3Xp/cover1.jpg",
+    "title": "The Secret Garden",
+    "author": "Emily Johnson",
+    "author_img": "https://i.ibb.co/K6xKc5f/author1.jpg",
+    "posted_date": "2024-03-14",
+    "reading_time": 30,
+    "hashtags": ["#fiction", "#classic", "#gardening"]
+  },
+  {
+    "id": "789012",
+    "cover": "https://i.ibb.co/x3CfGWr/cover2.jpg",
+    "title": "Lost in Time",
+    "author": "Michael Williams",
+    "author_img": "https://i.ibb.co/TgcvLWb/author2.jpg",
+    "posted_date": "2024-03-13",
+    "reading_time": 45,
+    "hashtags": ["#timetravel", "#adventure", "#mystery"]
+  },
+  {
+    "id": "345678",
+    "cover": "https://i.ibb.co/yYFsswY/cover3.jpg",
+    "title": "City of Illusions",
+    "author": "Sarah Thompson",
+    "author_img": "https://i.ibb.co/jb1TgbN/author3.jpg",
+    "posted_date": "2024-03-12",
+    "reading_time": 25,
+    "hashtags": ["#fantasy", "#urban", "#magic"]
+  },
+  {
+    "id": "901234",
+    "cover": "https://i.ibb.co/qYXfWpg/cover4.jpg",
+    "title": "The Last Voyage",
+    "author": "David Anderson",
+    "author_img": "https://i.ibb.co/d78HgqS/author4.jpg",
+    "posted_date": "2024-03-11",
+    "reading_time": 60,
+    "hashtags": ["#sci-fi", "#space", "#exploration"]
+  },
+  {
+    "id": "567890",
+    "cover": "https://i.ibb.co/HHdKsJZ/cover5.jpg",
+    "title": "Whispers in the Wind",
+    "author": "Rachel Carter",
+    "author_img": "https://i.ibb.co/M6G96jW/author5.jpg",
+    "posted_date": "2024-03-10",
+    "reading_time": 35,
+    "hashtags": ["#romance", "#mystery", "#suspense"]
+  }
+]
